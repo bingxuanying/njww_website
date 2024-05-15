@@ -67,7 +67,13 @@ const TiltResumeCard: React.FC<{
           style={{ rotateX, rotateY }}
           className="tilt-resume-card-outer"
         >
-          <div className="tilt-resume-card-inner">
+          <div
+            className={
+              hover
+                ? "tilt-resume-card-inner tilt-resume-card-inner-hover"
+                : "tilt-resume-card-inner"
+            }
+          >
             <img
               className={
                 hover ? "resume-pdf resume-pdf-hover rotating" : "resume-pdf"

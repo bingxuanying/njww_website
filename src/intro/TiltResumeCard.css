@@ -26,6 +26,10 @@
   transform-style: preserve-3d;
 }
 
+.tilt-resume-card-inner-hover {
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
 .rotating {
   -webkit-animation: rotating 15s linear infinite;
   -moz-animation: rotating 15s linear infinite;

@@ -69,7 +69,9 @@ const TiltResumeCard: React.FC<{
         >
           <div className="tilt-resume-card-inner">
             <img
-              className={hover ? "resume-pdf resume-pdf-hover" : "resume-pdf"}
+              className={
+                hover ? "resume-pdf resume-pdf-hover rotating" : "resume-pdf"
+              }
               onMouseEnter={() => {
                 setHover(true);
                 setParentIsHover(true);
@@ -85,7 +87,7 @@ const TiltResumeCard: React.FC<{
             />
             {hover ? (
               <div
-                className="text-resume-hover"
+                className="text-resume-hover rotating"
                 onMouseEnter={() => {
                   setHover(true);
                   setParentIsHover(true);

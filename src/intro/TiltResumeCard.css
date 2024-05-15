@@ -14,8 +14,9 @@
 
 .tilt-resume-card-inner {
   position: absolute;
-  border-radius: 0.1rem;
+  border-radius: 50%;
   inset: 1rem;
+  overflow: hidden;
   place-content: center;
   display: flex;
   justify-content: center;

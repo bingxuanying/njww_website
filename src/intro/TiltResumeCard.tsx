@@ -84,9 +84,33 @@ const TiltResumeCard: React.FC<{
               alt="resume"
             />
             {hover ? (
-              <div className="text-resume-hover">RESUME</div>
+              <div
+                className="text-resume-hover"
+                onMouseEnter={() => {
+                  setHover(true);
+                  setParentIsHover(true);
+                }}
+                onMouseLeave={() => {
+                  setHover(false);
+                  setParentIsHover(false);
+                }}
+              >
+                RESUME
+              </div>
             ) : (
-              <div className="text-resume">RESUME</div>
+              <div
+                className="text-resume"
+                onMouseEnter={() => {
+                  setHover(true);
+                  setParentIsHover(true);
+                }}
+                onMouseLeave={() => {
+                  setHover(false);
+                  setParentIsHover(false);
+                }}
+              >
+                RESUME
+              </div>
             )}
           </div>
         </motion.div>

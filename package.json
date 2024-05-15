@@ -1,5 +1,6 @@
 {
-  "name": "ybxx-personal-website",
+  "homepage": "http://nijingwen.com",
+  "name": "njww-personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo nijingwen.com > build/CNAME",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

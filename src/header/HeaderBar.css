@@ -1,0 +1,52 @@
+.header-bar-canvas {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 2rem;
+  z-index: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icon {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #171313;
+  border-radius: 100%;
+  font-size: 15px;
+}
+
+.header-icon-char {
+  color: #171313;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-icon:hover {
+  animation: header-icon-shake 0.8s ease-in forwards;
+}
+
+@keyframes header-icon-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
